@@ -53,3 +53,21 @@ is.nan(x) #Valor no numérico que no es faltante
 y <- c(1,2,NaN,10,3)
 is.na(y) #Valor faltante detectado
 is.nan(y) #Valor no numérico que no es faltante
+
+#Data frame
+x <- data.frame(foo = 1:4, bar = c(T,T,F,F))
+x
+nrow(x)
+ncol(x)
+
+#Names
+x <- 1:3
+names(x)
+names(x) <- c("foo","bar","norf")
+x
+names(x)
+m <- matrix(1:4,2,2)
+dimnames(m) <- list(c("a","b"),c("c","d"))
+m
+x <- list(a=1,b=2,c=3)
+x
